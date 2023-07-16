@@ -1,0 +1,2 @@
+# [Setup RNA-Seq Pipeline from scratch: fastq (reads) to counts | Step-by-Step Tutorial](https://www.youtube.com/watch?v=lG11JjovJHE&t=1208s)
+- [Original github code](https://github.com/kpatel427/YouTubeTutorials/blob/main/RNASeqpipeline.sh)
