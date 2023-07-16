@@ -14,7 +14,7 @@ fastqc data/demo_trimmed.fastq.gz -o data/
 
 # STEP 2: Run HISAT2
 mkdir HISAT2
-# get the genome indices
+# get the genome indices http://daehwankimlab.github.io/hisat2/download/
 wget https://genome-idx.s3.amazonaws.com/hisat/grch38_genome.tar.gz
 tar -xzf grch38_genome.tar.gz
 mv grch38/ HISAT2/
