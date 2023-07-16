@@ -1,0 +1,6 @@
+# [W5a: RNA-seq I Analysis – Measuring gene expressions from RNA-seq data](https://qcb.ucla.edu/collaboratory/workshops/w5a-rna-seq-i-analysis/#toggle-id-1)
+* [Day 1 slides](https://qcb.ucla.edu/wp-content/uploads/sites/14/2020/04/RNAseq1-day1.pdf), [Day 1 video](https://www.youtube.com/watch?v=-1D3zTKsOOU)
+* [Day 2 slides](https://qcb.ucla.edu/wp-content/uploads/sites/14/2020/04/RNAseq1-day2.pdf), [Day 2 video](https://www.youtube.com/watch?v=oQDfTL5TcaY)
+* [Day 3 slides](https://qcb.ucla.edu/wp-content/uploads/sites/14/2020/04/RNAseq1-day3.pdf), [Day 3 video](https://www.youtube.com/watch?v=pTyWU_9UkqM)
+* [QCB-W5a-AB github](https://github.com/bhattacharya-a-bt/QCB-W5a-AB)
+* [Drive dataset](https://drive.google.com/drive/folders/1HZUWZBzr9pCUNXFzJcNMCjmvOklZ2VHw)
