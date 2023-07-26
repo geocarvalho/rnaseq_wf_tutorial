@@ -1,0 +1,25 @@
+---
+title: "W5a: RNA-seq | Analysis day 2"
+author: "George Carvalho"
+date: "July 17, 2023"
+output: html_document
+---
+
+
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("edgeR")
+setwd("/Users/gcarvalhoneto/Documents/repos/rnaseq_wf_tutorial/ucla_w5a")
+```
+
+- Merging all samples
+```{r}
+library(edgeR)
+samples <- c("KD1", "KD2", "SC1", "SC2")
+files <- paste0("data/", samples, "_trimmed.pergene_counts.txt")
+counts <- readDGE(files, labels=samples, header=FALSE)
+names(which(counts$counts[,1]>0))
+write.csv(counts$counts, "data/all_pergenes_counts.csv")
+```
