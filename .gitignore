@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 .DS_Store
 */.DS_Store
+
+bioinfomagician/HISAT2/
+bioinfomagician/data/
+bioinfomagician/quants/
+ucla_w5a/data/
+ucla_w5a/reference/
