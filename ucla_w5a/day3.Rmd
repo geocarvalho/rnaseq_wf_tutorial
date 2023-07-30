@@ -1,0 +1,43 @@
+---
+title: "W5a: RNA-seq | Analysis day 3"
+author: "George Carvalho"
+date: "July 28, 2023"
+output: html_document
+---
+
+# Importing counts from Salmon
+- Install `tximeta`
+
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("tximeta")
+```
+
+- Open dataset
+```{r}
+library(SummarizedExperiment)
+require(tximeta)
+```
+
+```{r}
+setwd("/Users/gcarvalhoneto/Documents/repos/rnaseq_wf_tutorial/ucla_w5a/data")
+coldata <- data.frame(
+    files = c(
+        "KD1_trimmed.salmon/quant.sf", 
+        "KD2_trimmed.salmon/quant.sf", 
+        "SC1_trimmed.salmon/quant.sf", 
+        "SC2_trimmed.salmon/quant.sf"),
+    names = c("KD1", "KD2", "SC1", "SC2"),
+    condition = c(rep("Knockdown", 2), rep("Scramble", 2)),
+    stringsAsFactors = FALSE
+)
+
+coldata$condition = factor(
+    coldata$condition, levels=c("Scramble", "Knockdown")
+)
+
+se = tximeta(coldata)
+gse = summarizeToGene(se, countsFromAbundance="lengthScaledTPM")
+```
